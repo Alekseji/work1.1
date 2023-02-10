@@ -1,44 +1,219 @@
 // Задание 1
-// Необходимо с помощью цикла for вывести следующие 11 строк в консоль:
-// 0 – это ноль
-// 1 – нечетное число
-// 2 – четное число
-// 3 – нечетное число
-// …
-// 10 – четное число
+// Дан объект numbers. Необходимо в консоль вывести все значения больше 
+// или  равные 3.
+
+// const numbers = {
+// keyin1: 1,
+// keyin2: 2,
+// keyin3: 3,
+// keyin4: 4,
+// keyin5: 5,
+// keyin6: 6,
+// keyin7: 7,
+// }
+
+
 
 // Задание 2
-// Дан массив [1, 2, 3, 4, 5, 6, 7]
-// Сделайте из этого массива следующий [1, 2, 3, 6, 7]
+// Необходимо из объекта, который лежит в константе post вывести значения, 
+// к которым приписан комментарий, в консоль.
+
+// const post = {
+// author: "John", // вывести этот текст
+// postId: 23,
+// comments: [
+// {
+// userId: 10,
+// userName: "Alex",
+// text: "lorem ipsum",
+// rating: {
+// likes: 10,
+// dislikes: 2, // вывести это число
+// },
+// },
+// {
+// userId: 5, // вывести это число
+// userName: "Jane",
+// text: "lorem ipsum 2", // вывести этот текст
+// rating: {
+// likes: 3,
+// dislikes: 1,
+// },
+// },
+// ],
+// };
+
+
 
 // Задание 3
-// Используя Math.random() вам необходимо генерировать цифры от 0 до 9, 
-// и создать массив состоящий из 5 таких элементов
-// 1. Рассчитать сумму элементов этого массива
-// 2. Найти минимальное число
-// 3. Найти есть ли в этом массиве число 3
+// Дан массив products, необходимо цену каждого продукта уменьшить на 15% 
+// используя метод forEach.
+
+// const products = [
+// {
+// id: 3,
+// price: 200,
+// },
+// {
+// id: 4,
+// price: 900,
+// },
+// {
+// id: 1,
+// price: 1000,
+// },
+// ];
+
+
+
+// Задание 4
+// 1. Необходимо вывести в консоль массив продуктов в котором есть хоть 
+// одна фотография используя метод filter. Исходные данные - массив products.
+// 2. Необходимо отсортировать массив products используя метод sort по цене,
+//  начиная с самой маленькой, заканчивая самой большой ценой, после чего 
+//  вывести отсортированный массив в консоль.
+
+// ```
+// const products = [
+// {
+// id: 3,
+// price: 127,
+// photos: [
+// "1.jpg",
+// "2.jpg",
+// ],
+// },
+// {
+// id: 5,
+// price: 499,
+// photos: [],
+// },
+// {
+// id: 10,
+// price: 26,
+// photos: [
+// "3.jpg",
+// ],
+// },
+// {
+// id: 8,
+// price: 78,
+// },
+// ];
+
+// []()
+// []()
+// **Задание 5**
+// Дано 2 массива 
+// const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+// const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", 
+// "суббота", "воскресенье"];
+// ```
+
+
+// Вам необходимо объединить 2 этих массива, чтобы значения первого массива 
+// были ключами, а значения второго массива — значениями.
+// слово
 
 // Задание 1
-// const arr=[0,1,2,3,4,5,6,7,8,9,10,11];
-// for (let index=0; index<=arr.length; index++){
-//    if (arr[index]  == 0 ) {
-//       console.log(`${arr[index]} это ноль`);}  
-   
-//    else if (arr[index] % 2 ==0){
-//       console.log(`${arr[index]} четное число`);} 
-//    else {
-//          console.log(`${arr[index]} нечетное число`);}  
+// const numbers = {
+//    keyin1: 1,
+//    keyin2: 2,
+//    keyin3: 3,
+//    keyin4: 4,
+//    keyin5: 5,
+//    keyin6: 6,
+//    keyin7: 7,
+
+//    showAll: function (){
+//    console.log(this.keyin3, this.keyin4,this.keyin5, this.keyin6, this.keyin7);  
 //    }
-// задание 2
-// const arr = [1,2,3,4,5,6,7];
-// arr.splice(3,2);
-// console.log(arr);
-// Задание 3
-const arr=[ ];
-let size=5;
+//    }
+//    numbers.showAll(); 
+   
+   // задание 2
+   // const post = {
+   //    author: "John", // вывести этот текст
+   //    postId: 23,
+   //    comments: [
+   //    {
+   //    userId: 10,
+   //    userName: "Alex",
+   //    text: "lorem ipsum",
+   //    rating: {
+   //    likes: 10,
+   //    dislikes: 2, // вывести это число
+   //    },
+   //    },
+   //    {
+   //    userId: 5, // вывести это число
+   //    userName: "Jane",
+   //    text: "lorem ipsum 2", // вывести этот текст
+   //    rating: {
+   //    likes: 3,
+   //    dislikes: 1,
+   //    },
+   //    },
+   //    ],
+      
+   //    showAll: function (){
+            
+   //    console.log(this.author, this.comments[0], this.comments[1]);
+   //    }
+   //    };
+   //    post.showAll();
+   // Задание 3
+   // const products = [
+   //    {
+   //    id: 3,
+   //    price: 200,
+   //    },
+   //    {
+   //    id: 4,
+   //    price: 900,
+   //    },
+   //    {
+   //    id: 1,
+   //    price: 1000,
+   //    },
+   //    ];
+     
+      
+   //   for(const key in products) {
+   //    for (const price in key){
+   //    products.price= key[price]*0.15
+   //    }
+   //   }
+   //   console.log(products.price);
 
-for (let i =0; i<size; i++){
-arr.push(Math.round (Math.random(0,9)*10));
-
-}
-console.log(arr);
+   // задание 4
+   const products = [
+      {
+      id: 3,
+      price: 127,
+      photos: [
+      "1.jpg",
+      "2.jpg",
+      ],
+      },
+      {
+      id: 5,
+      price: 499,
+      photos: [],
+      },
+      {
+      id: 10,
+      price: 26,
+      photos: [
+      "3.jpg",
+      ],
+      },
+      {
+      id: 8,
+      price: 78,
+      },
+      ];
+      let filter=products.filter(item=> item = ["jpg"]);
+      
+     console.log(filter);
+    
