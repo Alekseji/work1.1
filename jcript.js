@@ -1,219 +1,64 @@
+// Обязательное задание.
+
+// Выполнить все задачи в теге script. Комментарии, в которых написаны 
+// задачи, не стирать, код с решением задачи пишем под комментарием.
+
+
+
+// 1. Найти по id, используя getElementById, элемент с id равным 
+// "super_link" и вывести этот элемент в консоль.
+// []()
+// 2. Внутри всех элементов на странице, которые имеют класс "card-link", 
+// поменяйте текст внутри элемента на "ссылка".
+// []()
+// 3. Найти все элементы на странице с классом "card-link", которые лежат 
+// в элементе с классом "card-body" и вывести полученную коллекцию в консоль.
+// []()
+// 4. Найти первый попавшийся элемент на странице у которого есть атрибут
+//  data-number со значением 50 и вывести его в консоль.
+// []()
+// 5. Выведите содержимое тега title в консоль.
+// []()
+// 6. Получите элемент с классом "card-title" и выведите его родительский 
+// узел в консоль.
+// []()
+// 7. Создайте тегp`, запишите внутри него текст "Привет" 
+// и добавьте созданный тег в начало элемента, который имеет класс "card".
+
+// 8. Удалите тег h6 на странице.
+
 // Задание 1
-// Дан объект numbers. Необходимо в консоль вывести все значения больше 
-// или  равные 3.
-
-// const numbers = {
-// keyin1: 1,
-// keyin2: 2,
-// keyin3: 3,
-// keyin4: 4,
-// keyin5: 5,
-// keyin6: 6,
-// keyin7: 7,
-// }
-
-
-
-// Задание 2
-// Необходимо из объекта, который лежит в константе post вывести значения, 
-// к которым приписан комментарий, в консоль.
-
-// const post = {
-// author: "John", // вывести этот текст
-// postId: 23,
-// comments: [
-// {
-// userId: 10,
-// userName: "Alex",
-// text: "lorem ipsum",
-// rating: {
-// likes: 10,
-// dislikes: 2, // вывести это число
-// },
-// },
-// {
-// userId: 5, // вывести это число
-// userName: "Jane",
-// text: "lorem ipsum 2", // вывести этот текст
-// rating: {
-// likes: 3,
-// dislikes: 1,
-// },
-// },
-// ],
-// };
-
-
-
+// const getElementById = document.querySelector('#super_link');
+// console.log(getElementById);
+// задание 2
+// const linkEl = document.querySelector('.card-link');
+// linkEl.textContent = 'cсылка';
+// console.log(linkEl);
 // Задание 3
-// Дан массив products, необходимо цену каждого продукта уменьшить на 15% 
-// используя метод forEach.
+// const linkEl = document.querySelectorAll('.card-link');
+// console.log(linkEl);
+// задание 4
+// const linkEl = document.querySelector('.card-link');
 
-// const products = [
-// {
-// id: 3,
-// price: 200,
-// },
-// {
-// id: 4,
-// price: 900,
-// },
-// {
-// id: 1,
-// price: 1000,
-// },
-// ];
+// console.log(linkEl );
 
+// задание 5
 
+// Задание 6
+// const linkEl = document.querySelector('.card-title');
 
-// Задание 4
-// 1. Необходимо вывести в консоль массив продуктов в котором есть хоть 
-// одна фотография используя метод filter. Исходные данные - массив products.
-// 2. Необходимо отсортировать массив products используя метод sort по цене,
-//  начиная с самой маленькой, заканчивая самой большой ценой, после чего 
-//  вывести отсортированный массив в консоль.
-
-// ```
-// const products = [
-// {
-// id: 3,
-// price: 127,
-// photos: [
-// "1.jpg",
-// "2.jpg",
-// ],
-// },
-// {
-// id: 5,
-// price: 499,
-// photos: [],
-// },
-// {
-// id: 10,
-// price: 26,
-// photos: [
-// "3.jpg",
-// ],
-// },
-// {
-// id: 8,
-// price: 78,
-// },
-// ];
-
-// []()
-// []()
-// **Задание 5**
-// Дано 2 массива 
-// const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
-// const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", 
-// "суббота", "воскресенье"];
-// ```
+//  console.log(linkEl.parentElement );
+// задание 7
+// const content = document.querySelector('.card');
+// const newContent = document.createElement('p');
+// newContent.textContent= "Привет";
+// content.appendChild(newContent);
 
 
-// Вам необходимо объединить 2 этих массива, чтобы значения первого массива 
-// были ключами, а значения второго массива — значениями.
-// слово
+// // Задание 8
+const content = document.querySelector('.card-subtitle mb-2 text-muted');
+const newContent = document.createElement('h6');
+newContent.textContent = "Card subtitle";
+content.appendChild(newContent);
+content.removeChild(newContent);
 
-// Задание 1
-// const numbers = {
-//    keyin1: 1,
-//    keyin2: 2,
-//    keyin3: 3,
-//    keyin4: 4,
-//    keyin5: 5,
-//    keyin6: 6,
-//    keyin7: 7,
-
-//    showAll: function (){
-//    console.log(this.keyin3, this.keyin4,this.keyin5, this.keyin6, this.keyin7);  
-//    }
-//    }
-//    numbers.showAll(); 
-   
-   // задание 2
-   // const post = {
-   //    author: "John", // вывести этот текст
-   //    postId: 23,
-   //    comments: [
-   //    {
-   //    userId: 10,
-   //    userName: "Alex",
-   //    text: "lorem ipsum",
-   //    rating: {
-   //    likes: 10,
-   //    dislikes: 2, // вывести это число
-   //    },
-   //    },
-   //    {
-   //    userId: 5, // вывести это число
-   //    userName: "Jane",
-   //    text: "lorem ipsum 2", // вывести этот текст
-   //    rating: {
-   //    likes: 3,
-   //    dislikes: 1,
-   //    },
-   //    },
-   //    ],
-      
-   //    showAll: function (){
-            
-   //    console.log(this.author, this.comments[0], this.comments[1]);
-   //    }
-   //    };
-   //    post.showAll();
-   // Задание 3
-   // const products = [
-   //    {
-   //    id: 3,
-   //    price: 200,
-   //    },
-   //    {
-   //    id: 4,
-   //    price: 900,
-   //    },
-   //    {
-   //    id: 1,
-   //    price: 1000,
-   //    },
-   //    ];
-     
-      
-   //   for(const key in products) {
-   //    for (const price in key){
-   //    products.price= key[price]*0.15
-   //    }
-   //   }
-   //   console.log(products.price);
-
-   // задание 4
-   const products = [
-      {
-      id: 3,
-      price: 127,
-      photos: [
-      "1.jpg",
-      "2.jpg",
-      ],
-      },
-      {
-      id: 5,
-      price: 499,
-      photos: [],
-      },
-      {
-      id: 10,
-      price: 26,
-      photos: [
-      "3.jpg",
-      ],
-      },
-      {
-      id: 8,
-      price: 78,
-      },
-      ];
-      let filter=products.filter(item=> item = ["jpg"]);
-      
-     console.log(filter);
-    
