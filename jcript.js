@@ -1,36 +1,51 @@
-// Задание 1
-// const text = document.querySelectorAll ('.dropdown-item');
-// text.forEach(element => {
-//       element.classList = 'super-dropdown.';
-      
-//     });
+// 1. Необходимо вывести сообщение в консоль "все теги прогрузились", 
+// когда все теги будут созданы браузером.
+// window.addEventListener('load',function (e){
+//  console.log('все теги прогрузились');
+// });
 
-//    Задание 2
-// const text = document.querySelectorAll ('.btn btn-secondary dropdown-toggle');
-// text.forEach(element => {
-//       element.classList.remove = 'btn btn-secondary dropdown-toggle.';
-      
-//     });
-// Задание 3
-// let text = document.querySelectorAll ('.menu');
-// text.forEach(element => {
-//       if ( element.classList.contains(' .menu')){
-//         element.classList.remove(' .dropdown-menu') 
-//       } 
-//     });
-//    задание 4
 
-// const text = document.getElementById ('dropdownMenuButton');
-// const item = document.createElement('id');
-// item.id= 'superDropdown';
-// text.setAttribute('id','superDropdown');
-// text.appendChild(item);
+// 2. Необходимо вывести сообщение в консоль "страница загрузилась", 
+// когда все ресурсы страницы будут загружены.
+// window.addEventListener('load',function (e){
+//     console.log('страница загрузилась');
+// });
+// 
 
-// Задание 5
-let text = document.getElementById ('dropdownMenuButton');
-const item = document.createElement('attribute');
-item.attribute = 'data-dd';
-text.setAttribute('dropdownMenuButton','data-dd');
-text.appendChild(item);
 
-console.log(text.getAttribute(item));
+// 3. При клике на какой-либо тег на странице в консоль должно выводиться 
+// сообщение наподобие:
+// - Класс "super_element" присутствует в элементе "div".
+// - сообщение должно определять присутствует или отсутствует класс 
+// "super_element" 
+// - у элемента, а также выводить в нижнем регистре верный тег в данной 
+// строке, по - которому был совершен клик.
+// - Необходимо использовать делегирование.
+
+// document.addEventListener('click',function(e){
+//         console.log(e.target.className);
+//         if (className ='.super_element'){
+//        console.log('присутствует');      
+//         } else {
+//                 console.log('отсутсвует');       
+//         }
+
+// }); 
+
+// 4. Сделайте, чтобы при наведении на textarea в консоли появлялось 
+// сообщение: "Вы навели на textarea."
+
+// const textarea = document.querySelector ('textarea');
+// textarea.addEventListener('mouseover', function () {
+//         console.log('Вы навели на textarea');
+// })
+
+// 5. Необходимо повесить событие клика на тег ul. В обработчике события 
+// в консоль необходимо выводить текст, который записан внутри элемента 
+// кнопки, по которой был произведен клик. Если клик был не по кнопке, то 
+// ничего выводить не нужно. Необходимо использовать делегирование.
+document.addEventListener('click',function(e){
+            
+            console.log(e.target.textContent);
+            
+})
